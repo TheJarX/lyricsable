@@ -131,6 +131,8 @@ const clearFavList = () => document.querySelector('#fav_cards').innerHTML = '';
 const renderFavElement = song => new DOMRender('#fav_cards', createFavElement(song)).renderElement();
 
 const renderFavourites = () => {
+    const favs = getFavourites();
+    if (!favs) return;
     clearFavList();
     getFavourites().forEach(renderFavElement);
     addDeleteFavListener();
