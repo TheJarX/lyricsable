@@ -1,0 +1,52 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+  integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+<link href="css/style.css" rel="stylesheet">
+<title>Lyricsable</title>
+
+<header id="header">
+  <nav id="nav">
+  </nav>
+</header>
+<div id="app">
+  <img id="logo" src="img/icons/lyricsable.png" alt="">
+  <sub>Powered by Genius</sub>
+  <form id="search">
+    <input type="text" id="search__query" placeholder="Search some song...">
+    <button type="submit" id="search_button" class="btn"><i class="fas fa-search"></i></button>
+  </form>
+
+  <div id="favourites">
+    <button class="toggle__fav btn"><i class="fas fa-ellipsis-h"></i></button>
+    <div id="fav_list">
+      <div class="fav__list__header">
+        <button id="close_fav_list">&times;</button>
+        <div class="fav__cards__title">My Favourites</div>
+      </div>
+      <div id="fav_cards"><p>Nothing here, yet</p></div>
+
+    </div>
+  </div>
+  
+  <div id="messages">
+    <div class="message">
+      Find your song <i class="fas fa-compact-disc"></i>
+    </div>
+  </div>
+  
+  <div id="cards">
+  </div>
+</div>
+
+<script src="js/dom-render.js"></script>
+<script src="js/app.js"></script>
+
+</html>
